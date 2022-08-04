@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Container, DarkTheme } from './styles';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
+import Profile from '../../components/Profile';
 
 const Home = () => {
 
@@ -11,6 +12,7 @@ const Home = () => {
             <DarkTheme isDarkTheme={isDarkTheme}>
                 <DarkModeIcon onClick={() => setIsDarkTheme(!isDarkTheme)} />
             </DarkTheme>
+            <Profile isDarkTheme={isDarkTheme} />
         </Container>
     )
 }
