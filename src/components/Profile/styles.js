@@ -76,8 +76,22 @@ export const Informations = styled.ul`
 export const ButtonWrapper = styled.div`
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     width: 30%;
     margin-bottom: 1rem;
+
+    a {
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        margin: 1rem 0;
+        text-decoration: none;
+        color: #3D3D3D;
+        background-color: #FFF;
+        font-size: 0.9rem;
+    }
 
     button {
         padding: 1rem 2rem;
@@ -85,14 +99,12 @@ export const ButtonWrapper = styled.div`
         cursor: pointer;
         display: flex;
         align-items: center;
-
+        margin: 1rem 0;
+        font-size: 0.9rem;
+        background-color: ${props => props.isDarkTheme ? 'var(--dark-theme-yellow)' : 'var(--light-theme-yellow)'};
         svg {
-            font-size: 1rem;
-            margin-left: 1rem;
-        }
-    }
-
-    .download-button {
-       background-color: ${props => props.isDarkTheme ? 'var(--dark-theme-yellow)' : 'var(--light-theme-yellow)'};
+                font-size: 1rem;
+                margin-left: 1rem;
+            }
     }
 `

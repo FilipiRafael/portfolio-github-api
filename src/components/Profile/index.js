@@ -3,11 +3,19 @@ import { useEffect, useState, Fragment } from 'react';
 import api from '../../services/api';
 import { Container, Avatar, Bio, Wrapper, Informations, ButtonWrapper } from './styles';
 import { YouTube, GitHub, LinkedIn, Instagram, DownloadRounded, Newspaper } from '@mui/icons-material';
+import { saveAs } from 'file-saver';
 
 const Profile = ({ isDarkTheme }) => {
 
     const [profile, setProfile] = useState({});
     const [isLoading, setIsLoading] = useState(true);
+
+    const downloadFile = () => {
+        saveAs(
+            'https://drive.google.com/file/d/1bidsaEfBvoH7uZ3MfDOjv3Bbml8mlZnv/view?usp=sharing',
+            'Filipi-Rafael.pdf'
+        );
+    };
 
     const getGithubProfile = () => {
         api.get()
@@ -75,8 +83,8 @@ const Profile = ({ isDarkTheme }) => {
                         </li>
                     </Informations>
                     <ButtonWrapper isDarkTheme={isDarkTheme}>
-                        <button className="download-button">Download CV <DownloadRounded /></button>
-                        <button>Contate-me</button>
+                        <button onClick={downloadFile}>Download CV <DownloadRounded /></button>
+                        <a href="https://wa.me/message/6DL7XBDWN7AOM1" target="_blank">Contate-me</a>
                     </ButtonWrapper>
                 </Fragment>
             )}
