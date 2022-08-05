@@ -7,6 +7,10 @@ export const Container = styled.div`
     column-gap: 2rem;
     row-gap: 2rem;
     overflow: hidden;
+
+    @media screen and (max-width: 800px) {
+        grid-template-columns: 1fr;
+    }
 `
 
 export const Project = styled.div`

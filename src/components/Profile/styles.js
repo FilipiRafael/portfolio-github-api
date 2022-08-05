@@ -1,11 +1,21 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: 425px) {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    @media screen and (max-width: 800px) {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
 `
 
 export const Wrapper = styled.div`
@@ -14,6 +24,26 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: 425px) {
+        width: 80%;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 800px) {
+        width: 70%;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    @media screen and (min-width: 801px) and (max-width: 1220px) {
+        width: 70%;
+    }
+
+    @media screen and (min-width: 1440px) {
+        max-width: 700px;
+    }
 `
 
 export const Avatar = styled.img`
@@ -21,6 +51,16 @@ export const Avatar = styled.img`
     height: 200px;
     border-radius: 50%;
     border: 3px solid ${props => props.isDarkTheme ? 'var(--dark-theme-yellow)' : 'var(--light-theme-yellow)'};
+
+    @media screen and (max-width: 425px) {
+        width: 130px;
+        height: 130px;
+    }
+
+    @media screen and (max-width: 425px) {
+        width: 180px;
+        height: 180px;
+    }
 `
 
 export const Bio = styled.div`
@@ -36,6 +76,16 @@ export const Bio = styled.div`
         font-size: 0.9rem;
     }
 
+    @media screen and (max-width: 425px) {
+        margin: 0 1rem;
+    }
+
+    @media screen and (max-width: 800px) {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+    }
+
     ul {
         width: 40%;
         display: flex;
@@ -43,6 +93,16 @@ export const Bio = styled.div`
         align-items: center;
         list-style-type: none;
         margin: 1rem 0;
+
+        @media screen and (max-width: 425px) {
+            width: 100%;
+            margin-top: 2rem;
+        }
+
+        @media screen and (max-width: 800px) {
+            width: 80%;
+            margin-top: 2rem;
+        }
 
         svg {
             cursor: pointer;
@@ -58,6 +118,11 @@ export const Informations = styled.ul`
     align-items: flex-start;
     font-size: 0.9rem;
 
+    @media screen and (max-width: 425px) {
+        margin: 0;
+        max-width: 100vw;
+    }
+
     li {
         display: flex;
         flex-direction: column;
@@ -70,6 +135,11 @@ export const Informations = styled.ul`
         span {
             font-weight: 300;
         }
+
+        @media screen and (max-width: 425px) {
+            margin: 0 1rem;
+            width: auto;
+        }
     }
 `
 
@@ -79,6 +149,22 @@ export const ButtonWrapper = styled.div`
     flex-wrap: wrap;
     width: 30%;
     margin-bottom: 1rem;
+
+    @media screen and (max-width: 425px) {
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    @media screen and (min-width: 426px) and (max-width: 800px) {
+        width: 100%;
+        max-width: 80vw;
+        margin: 2rem 0;
+    }
+
+    @media screen and (min-width: 801px) and (max-width: 1220px) {
+        width: 100%;
+        max-width: 80vw;
+    }
 
     a {
         padding: 1rem 2rem;
@@ -105,6 +191,10 @@ export const ButtonWrapper = styled.div`
         svg {
                 font-size: 1rem;
                 margin-left: 1rem;
+
+                @media screen and (max-width: 800px) {
+                       margin: 0;
+                }
             }
     }
 `
