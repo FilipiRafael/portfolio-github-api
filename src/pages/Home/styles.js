@@ -24,3 +24,11 @@ export const DarkTheme = styled.div`
     background-color: ${props => props.isDarkTheme ? 'var(--dark-theme-icon-background-color)' : 'var(--light-theme-icon-background-color)'};
     color: ${props => props.isDarkTheme ? 'var(--dark-text-color)' : 'var(--light-text-color)'};
 `
+
+export const Copyright = styled.span`
+    margin-top: 5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    /* color: #A3ABB2; */
+    color: ${props => props.isDarkTheme ? '#A3ABB2' : '#575757'}
+`
