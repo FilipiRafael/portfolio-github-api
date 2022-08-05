@@ -71,7 +71,7 @@ const Profile = ({ isDarkTheme }) => {
                     <Informations>
                         <li>
                             <span>{profile.public_repos}</span>
-                            <span>Repositórios públicos</span>
+                            <span>Repositórios</span>
                         </li>
                         <li>
                             <span>{profile.followers}</span>
