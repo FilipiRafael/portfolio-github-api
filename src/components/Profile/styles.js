@@ -77,7 +77,7 @@ export const Bio = styled.div`
     }
 
     @media screen and (max-width: 425px) {
-        margin: 0 1rem;
+        margin: 0 0.5rem;
     }
 
     @media screen and (max-width: 800px) {
