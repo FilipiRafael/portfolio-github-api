@@ -19,6 +19,18 @@ const Repos = ({ isDarkTheme }) => {
             link: 'https://github.com/FilipiRafael/rocket-help'
         },
         {
+            image: '/assets/images/jordan-ecommerce.svg',
+            title: 'Jordan Shoes',
+            description: 'O projeto tem o objetivo final de ser um ecommerce com design responsivo.',
+            link: 'https://jordanshoes-ecommerce.vercel.app/'
+        },
+        {
+            image: '/assets/images/card-design.svg',
+            title: 'Card Design UI',
+            description: 'A ideia do projeto foi para aplicar, práticar e melhorar minhas habilidades técnicas em desenvolvimento web.',
+            link: 'https://filipirafael.github.io/frontendmentor-challenge/'
+        },
+        {
             image: '/assets/images/first-portfolio.svg',
             title: 'Portfólio 2021',
             description: 'A ideia do projeto foi para utilizar no meu domínio público para fins de portfólio e apresentação profissional.',
