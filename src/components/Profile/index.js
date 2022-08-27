@@ -71,20 +71,20 @@ const Profile = ({ isDarkTheme }) => {
                     <Informations>
                         <li>
                             <span>{profile.public_repos}</span>
-                            <span>Repositórios</span>
+                            <span>Repositories</span>
                         </li>
                         <li>
                             <span>{profile.followers}</span>
-                            <span>Seguidores</span>
+                            <span>Followers</span>
                         </li>
                         <li>
                             <span>{profile.following}</span>
-                            <span>Seguindo</span>
+                            <span>Following</span>
                         </li>
                     </Informations>
                     <ButtonWrapper isDarkTheme={isDarkTheme}>
                         <button onClick={downloadFile}>Download CV <DownloadRounded /></button>
-                        <a href="https://wa.me/message/6DL7XBDWN7AOM1" target="_blank">Contate-me</a>
+                        <a href="https://wa.me/message/6DL7XBDWN7AOM1" target="_blank">Contact me</a>
                     </ButtonWrapper>
                 </Fragment>
             )}

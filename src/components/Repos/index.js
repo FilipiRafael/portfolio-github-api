@@ -9,49 +9,49 @@ const Repos = ({ isDarkTheme }) => {
         {
             image: '/assets/images/doingdev.svg',
             title: 'Doing.dev',
-            description: 'O projeto tem o objetivo final de ser um todoist mininalista com Lofi Music Player.',
+            description: 'The project has the ultimate goal of being a minimalist todoist with Lofi Music Player.',
             link: 'https://doing-dev.vercel.app/'
         },
         {
             image: '/assets/images/rocket-help.svg',
             title: 'Rocket Help',
-            description: 'A ideia do projeto foi para aplicar, práticar e melhorar minhas habilidades técnicas em desenvolvimento mobile.',
+            description: 'The idea of ​​the project was to apply, practice and improve my technical skills in mobile development.',
             link: 'https://github.com/FilipiRafael/rocket-help'
         },
         {
             image: '/assets/images/jordan-ecommerce.svg',
             title: 'Jordan Shoes',
-            description: 'O projeto tem o objetivo final de ser um ecommerce com design responsivo.',
+            description: 'The project has the ultimate goal of being an ecommerce with responsive design.',
             link: 'https://jordanshoes-ecommerce.vercel.app/'
         },
         {
             image: '/assets/images/card-design.svg',
             title: 'Card Design UI',
-            description: 'A ideia do projeto foi para aplicar, práticar e melhorar minhas habilidades técnicas em desenvolvimento web.',
+            description: 'The idea of the project was to apply, practice and improte my technical skills in web development.',
             link: 'https://filipirafael.github.io/frontendmentor-challenge/'
         },
         {
             image: '/assets/images/first-portfolio.svg',
             title: 'Portfólio 2021',
-            description: 'A ideia do projeto foi para utilizar no meu domínio público para fins de portfólio e apresentação profissional.',
+            description: 'The idea of the project was to use site in my domain for portfolio and professional presentation purposes.',
             link: 'https://filipirafael.github.io/website-portfolio-2022/'
         },
         {
             image: '/assets/images/cinema-next.svg',
-            title: 'Cinema Next',
-            description: 'A ideia do website foi para aplicar, práticar e melhorar minhas habilidades técnicas em desenvolvimento web com ReactJS.',
+            title: 'Movies App',
+            description: 'The idea of the project was to apply, practice and improve my technical skills in web development and ReactJS',
             link: 'https://cinema-next.vercel.app/'
         },
         {
             image: '/assets/images/registration-page.svg',
-            title: 'Página de Cadastro',
-            description: 'A ideia do website foi para aplicar, práticar e melhorar minhas habilidades técnicas em desenvolvimento web.',
+            title: 'Registration Page',
+            description: 'The idea of the project was to apply, practice and improve my technical skills in web responsive design.',
             link: 'https://filipirafael.github.io/registration-page/'
         },
         {
             image: '/assets/images/jobs-landing-page.svg',
-            title: 'Página de Vagas',
-            description: 'A ideia do website foi para aplicar, práticar e melhorar minhas habilidades técnicas em desenvolvimento web.',
+            title: 'Jobs Page',
+            description: 'The idea of the project was to apply, practice and improve my technical skills about web responsive design.',
             link: 'https://filipirafael.github.io/optimusTech/'
         },
     ]
