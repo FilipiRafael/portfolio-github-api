@@ -7,16 +7,40 @@ const Repos = ({ isDarkTheme }) => {
 
     const reposList = [
         {
-            image: '/assets/images/doingdev.svg',
-            title: 'Doing.dev',
-            description: 'The project has the ultimate goal of being a minimalist todoist with Lofi Music Player.',
-            link: 'https://doing-dev.vercel.app/'
+            image: '/assets/images/cambly-clone.png',
+            title: 'Cambly Clone',
+            description: 'The idea of the project was to apply, practice and improte my technical skills in web development.',
+            link: 'https://cambly-ui-clone.vercel.app/'
+        },
+        {
+            image: '/assets/images/alura-space.png',
+            title: 'Alura Space',
+            description: 'The idea of ​​the project was to apply, practice and improve my technical skills in web development.',
+            link: 'https://alura-space-xi.vercel.app/'
+        },
+        {
+            image: '/assets/images/instaclone.png',
+            title: 'Instagram Clone',
+            description: 'The idea of the project was to apply, practice and improte my technical skills in mobile development.',
+            link: 'https://github.com/FilipiRafael/insta-clone-react-native'
         },
         {
             image: '/assets/images/rocket-help.svg',
             title: 'Rocket Help',
             description: 'The idea of ​​the project was to apply, practice and improve my technical skills in mobile development.',
             link: 'https://github.com/FilipiRafael/rocket-help'
+        },
+        {
+            image: '/assets/images/doingdev.svg',
+            title: 'Doing.dev',
+            description: 'The project has the ultimate goal of being a minimalist todoist with Lofi Music Player.',
+            link: 'https://doing-dev.vercel.app/'
+        },
+        {
+            image: '/assets/images/doingdev-mobile.svg',
+            title: 'Doing.dev Mobile App',
+            description: 'The project has the ultimate goal of being a minimalist todoist App.',
+            link: 'https://github.com/FilipiRafael/doingdev-mobile-app'
         },
         {
             image: '/assets/images/jordan-ecommerce.svg',
