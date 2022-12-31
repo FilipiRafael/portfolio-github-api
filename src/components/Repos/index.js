@@ -7,6 +7,18 @@ const Repos = ({ isDarkTheme }) => {
 
     const reposList = [
         {
+            image: '/assets/images/robinfood.png',
+            title: 'RobinFood',
+            description: 'The idea of the project was to apply, practice and improte my technical skills in mobile development.',
+            link: 'https://github.com/FilipiRafael/robinfood'
+        },
+        {
+            image: '/assets/images/gatitopetshop.png',
+            title: 'Gatito Petshop',
+            description: 'The idea of ​​the project was to apply, practice and improve my technical skills in mobile development.',
+            link: 'https://github.com/FilipiRafael/petshop-app'
+        },
+        {
             image: '/assets/images/cambly-clone.png',
             title: 'Cambly Clone',
             description: 'The idea of the project was to apply, practice and improte my technical skills in web development.',
