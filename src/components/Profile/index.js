@@ -12,7 +12,7 @@ const Profile = ({ isDarkTheme }) => {
 
     const downloadFile = () => {
         saveAs(
-            'https://drive.google.com/file/d/1-kRmjneOfMDvZCrF_ghs3cYEduBEZZ73/view?usp=sharing',
+            'https://drive.google.com/file/d/1D6-n-vViiyRu5C4TTHlpkcC0FnNN9_Fa/view?usp=share_link',
             'Filipi-Rafael.pdf'
         );
     };
