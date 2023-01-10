@@ -95,7 +95,7 @@ const Repos = ({ isDarkTheme }) => {
     return (
         <Container>
         {reposList.map((repo) => (
-            <Project isDarkTheme={isDarkTheme} repo={repo}>
+            <Project key={repo.link} isDarkTheme={isDarkTheme} repo={repo}>
                 <div>
                     <h2>{repo.title}</h2>
                     <span>{repo.description}</span>

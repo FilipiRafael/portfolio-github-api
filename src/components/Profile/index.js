@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-no-target-blank */
 import { useEffect, useState, Fragment } from 'react';
 import api from '../../services/api';
-import { Container, Avatar, Bio, Wrapper, Informations, ButtonWrapper } from './styles';
+import { Container, Avatar, Bio, Wrapper, Informations, ButtonWrapper, YoutubeButton, YoutubeIframe } from './styles';
 import { YouTube, GitHub, LinkedIn, Instagram, DownloadRounded, Newspaper } from '@mui/icons-material';
 import { saveAs } from 'file-saver';
 
@@ -9,6 +9,7 @@ const Profile = ({ isDarkTheme }) => {
 
     const [profile, setProfile] = useState({});
     const [isLoading, setIsLoading] = useState(true);
+    const [showVideo, setShowVideo] = useState(false);
 
     const downloadFile = () => {
         saveAs(
@@ -86,6 +87,20 @@ const Profile = ({ isDarkTheme }) => {
                         <button onClick={downloadFile}>Download CV <DownloadRounded /></button>
                         <a href="https://wa.me/message/6DL7XBDWN7AOM1" target="_blank">Contact me</a>
                     </ButtonWrapper>
+                    <YoutubeButton
+                        onClick={() => setShowVideo(!showVideo)}
+                    >
+                        <YouTube />
+                        Programming career interview
+                        <YoutubeIframe
+                            showVideo={showVideo}
+                            src="https://www.youtube.com/embed/Fy4BNWXEdyM?controls=0&amp;start=232"
+                            title="Programming career interview"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                        ></YoutubeIframe>
+                    </YoutubeButton>
                 </Fragment>
             )}
         </Container>

@@ -198,3 +198,54 @@ export const ButtonWrapper = styled.div`
             }
     }
 `
+
+export const YoutubeButton = styled.button`
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    background-color: #F70000;
+    color: #FFF;
+    text-decoration: none;
+    z-index: 1;
+
+    @media screen and (max-width: 425px) {
+        width: 90%;
+    }
+
+    svg {
+        font-size: 2rem;
+        margin-right: 0.5rem;
+    }
+`;
+
+export const YoutubeIframe = styled.iframe`
+    width: 560px;
+    height: 315px;
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+    transform: translateY(100%);
+    opacity: 0;
+    position: absolute;
+    z-index: 10;
+
+    ${props => props.showVideo &&`
+        transform: translateY(65%);
+        opacity: 1;
+    `}
+
+    @media screen and (max-width: 600px) {
+        width: 90%;
+        height: 200px;
+        transform: translateX(100%);
+
+        ${props => props.showVideo &&`
+            transform: translate(0, 75%);
+            opacity: 1;
+        `} 
+    }
+`;
