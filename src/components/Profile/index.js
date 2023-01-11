@@ -88,6 +88,7 @@ const Profile = ({ isDarkTheme }) => {
                         <a href="https://wa.me/message/6DL7XBDWN7AOM1" target="_blank">Contact me</a>
                     </ButtonWrapper>
                     <YoutubeButton
+                        showVideo={showVideo}
                         onClick={() => setShowVideo(!showVideo)}
                     >
                         <YouTube />

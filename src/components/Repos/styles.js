@@ -23,6 +23,7 @@ export const Project = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     background-color: transparent;
+    z-index: 1;
 
     &:hover,
     &:focus {

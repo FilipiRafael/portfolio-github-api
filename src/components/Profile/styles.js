@@ -211,7 +211,7 @@ export const YoutubeButton = styled.button`
     background-color: #F70000;
     color: #FFF;
     text-decoration: none;
-    z-index: 1;
+    z-index: ${props => props.showVideo ? 2 : 1};
 
     @media screen and (max-width: 425px) {
         width: 90%;
@@ -228,24 +228,22 @@ export const YoutubeIframe = styled.iframe`
     height: 315px;
     border-radius: 0.5rem;
     transition: all 0.3s;
-    transform: translateY(100%);
     opacity: 0;
+    transform: translate(0, 100%);
     position: absolute;
-    z-index: 10;
 
     ${props => props.showVideo &&`
-        transform: translateY(65%);
         opacity: 1;
+        transform: translate(0, 65%);
     `}
 
     @media screen and (max-width: 600px) {
         width: 90%;
         height: 200px;
-        transform: translateX(100%);
 
         ${props => props.showVideo &&`
-            transform: translate(0, 75%);
             opacity: 1;
+            transform: translate(0, 75%);
         `} 
     }
 `;
