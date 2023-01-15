@@ -25,7 +25,7 @@ const Repos = ({ isDarkTheme }) => {
             link: 'https://github.com/FilipiRafael/chat-app'
         },
         {
-            image: '/assets/images/ecommercecontext.png',
+            image: '/assets/images/ecommercecontext.svg',
             title: 'Ecommerce App',
             description: 'The idea of the project was to apply, practice and improte my technical skills in mobile development.',
             link: 'https://github.com/FilipiRafael/ecommerce-app'
